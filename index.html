@@ -344,6 +344,15 @@
   .note-box.warn .note-box-text { color: rgba(212,107,8,0.85); }
   .note-box.info .note-box-text { color: rgba(22,119,255,0.85); }
 
+  /* ===== SETTINGS NOTE BAR ===== */
+  .settings-note-bar {
+    flex-shrink: 0;
+    border-radius: 0;
+    padding: 8px 16px;
+    margin: 0;
+  }
+  .settings-note-bar .note-box-text { line-height: 1.6; }
+
   .s-fixed-bottom {
     background: #fff; box-shadow: 0 0 8px 0 rgba(18,18,35,0.1);
     padding: 16px 16px 0; flex-shrink: 0;
@@ -543,6 +552,10 @@
       </div>
     </div>
 
+    <div class="note-box warn settings-note-bar">
+      <div class="note-box-text">⚠ 每日限額於 00:00 重置，設定次日起生效</div>
+    </div>
+
     <div class="settings-scroll">
       <div class="settings-body">
         <span class="version-tag">方案 A｜卡片式佈局</span>
@@ -596,10 +609,6 @@
           </div>
         </div>
 
-        <div class="note-box warn">
-          <div class="note-box-title">⚠ 注意事項</div>
-          <div class="note-box-text">每日限額將於每天 00:00 重置。更改設定後次日起生效，請留意交易限額變更時間。</div>
-        </div>
       </div>
     </div>
 
@@ -693,11 +702,11 @@
           </div>
         </div>
 
-        <div class="note-box info">
-          <div class="note-box-title">ℹ 設定說明</div>
-          <div class="note-box-text">• 每日限額於每天 00:00 自動重置<br>• 不設限時以帳戶餘額為上限<br>• 折抵功能不影響刷卡點數或現金回饋</div>
-        </div>
       </div>
+    </div>
+
+    <div class="note-box info settings-note-bar">
+      <div class="note-box-text">• 限額於 00:00 重置　• 不設限以餘額為上限　• 折抵不影響點數或回饋</div>
     </div>
 
     <div class="s-fixed-bottom">
